@@ -151,6 +151,10 @@ import tensorflow as tf
 from tensorflow import keras
 
 
+# set_page_config()는 스크립트에서 가장 먼저 호출되는 Streamlit 명령이어야 한다.
+st.set_page_config(page_title="가죽 이상 탐지", page_icon="🧵", layout="centered")
+
+
 # ─────────────────────────────────────────────────────────────────
 # Streamlit 버전 호환 헬퍼
 #   st.image()의 "컨테이너 너비에 맞추기" 옵션 이름이 버전마다 다르다.
@@ -218,8 +222,6 @@ def predict(model, pil_img):
 # 4. Streamlit UI
 # ─────────────────────────────────────────────────────────────────
 def main():
-    # 1) 페이지 설정
-    st.set_page_config(page_title="가죽 이상 탐지", page_icon="🧵", layout="centered")
     st.title("🧵 가죽 이상 탐지 (Leather Defect Detection)")
     st.caption("사진을 업로드하거나 카메라로 촬영하면, VGG16 기반 모델이 정상/불량 여부를 판별합니다.")
 
