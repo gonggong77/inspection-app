@@ -6,8 +6,8 @@ Streamlit 웹 UI(파일 업로드 / 카메라 촬영 / 결과 시각화)를 추�
 
 실행 방법:
     streamlit run app.py
+가죽 이상 탐지 모델을 사용하는 Streamlit 웹 앱.
 """
-"""가죽 이상 탐지 모델을 사용하는 Streamlit 웹 앱."""
 
 # import os
 
